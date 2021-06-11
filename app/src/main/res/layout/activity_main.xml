@@ -6,32 +6,65 @@
     <data>
         <variable
             name="viewModel"
-            type="com.prachi.airqualityindexcheck.activity.MainActivityViewModel" />
+            type="com.prachi.airqualityindexcheck.activity.home.MainActivityViewModel" />
     </data>
     <androidx.constraintlayout.widget.ConstraintLayout
         android:background="@color/white"
         android:layout_width="match_parent"
         android:layout_height="match_parent"
-        tools:context=".activity.MainActivity">
+        tools:context=".activity.home.MainActivity">
 
         <TextView
-            android:id="@+id/tvtime"
-            android:layout_marginTop="@dimen/_50sdp"
+            android:id="@+id/tvheading"
+            android:text="@string/airqualitymonitoring"
+            android:textColor="@color/black"
+            android:textStyle="bold"
+            android:fontFamily="@font/arial"
+            android:textSize="@dimen/_20ssp"
+            android:layout_marginTop="@dimen/_20sdp"
+            android:layout_marginBottom="@dimen/_20sdp"
             app:layout_constraintLeft_toLeftOf="parent"
             app:layout_constraintRight_toRightOf="parent"
             app:layout_constraintTop_toTopOf="parent"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"/>
+        <TextView
+            android:id="@+id/tv_lastUpdatedDate"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textStyle="bold"
+            android:fontFamily="@font/arial"
+            android:textSize="@dimen/_15ssp"
+           android:text="date"
+            android:layout_marginRight="@dimen/_50sdp"
+            app:layout_constraintBottom_toTopOf="@+id/rv_cityAQI"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/tvheading" />
+
+        <TextView
+            android:id="@+id/tv_header"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/lastupdatedon"
+            android:textStyle="bold"
+            android:fontFamily="@font/arial"
+            android:textSize="@dimen/_15ssp"
+            app:layout_constraintBottom_toTopOf="@+id/rv_cityAQI"
+            app:layout_constraintEnd_toStartOf="@+id/tv_lastUpdatedDate"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/tvheading" />
 
 
        <androidx.recyclerview.widget.RecyclerView
-           android:id="@+id/rv_cityAQI"
+           android:id="@+id/rv_allcitiesAQI"
            android:layout_marginTop="@dimen/_50sdp"
-           app:layout_constraintTop_toBottomOf="@+id/tvtime"
+           app:layout_constraintTop_toBottomOf="@+id/tvheading"
            app:layout_constraintLeft_toLeftOf="parent"
            app:layout_constraintRight_toRightOf="parent"
            android:layout_width="match_parent"
            android:layout_height="wrap_content"
            app:layoutManager="androidx.recyclerview.widget.LinearLayoutManager"/>
+
+
     </androidx.constraintlayout.widget.ConstraintLayout>
 </layout>

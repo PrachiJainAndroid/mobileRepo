@@ -2,4 +2,7 @@
     <string name="app_name">AirQualityIndexCheck</string>
     <string name="frequencyofRefresh">How frequently would you like to fetch the AQI data from the socket?</string>
     <string name="submit">Submit</string>
+    <string name="airqualitymonitoring">Air Quality Monitoring</string>
+    <string name="lastupdatedon">Last Updated On :</string>
+    <string name="aqi">AQI</string>
 </resources>

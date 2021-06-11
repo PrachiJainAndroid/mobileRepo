@@ -33,31 +33,12 @@ interface AQIDatabaseDao {
     fun update(aqicityWiseRecord: AQIModel)
 
   @Query("SELECT * from AQI_Table")
-  fun getAllValues(): LiveData<List<AQIModel?>>
+  fun getAllValues(): LiveData<List<AQIModel>?>
 
 
   @Insert(onConflict = OnConflictStrategy.REPLACE)
   fun insertList(aqicityList: List<AQIModel>)
 
-
-  /*  @Transaction
-    open fun insertOrUpdate(obj: AQIModel) {
-        val id = insert(obj)
-        if (id == -1L) update(obj)
-    }*/
-
-
-   /* @Query("SELECT * from AQI_Table WHERE nightId = :key")
-    fun get(key: Long): SleepNight?*/
-
-   /* @Query("DELETE FROM daily_sleep_quality_table")
-    fun clear()
-
-    @Query("SELECT * FROM daily_sleep_quality_table ORDER BY nightId DESC")
-    fun getAllNights(): LiveData<List<SleepNight>>
-
-    @Query("SELECT * FROM daily_sleep_quality_table ORDER BY nightId DESC LIMIT 1")
-    fun getTonight(): SleepNight?*/
 
 
 }

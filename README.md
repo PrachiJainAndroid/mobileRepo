@@ -8,12 +8,12 @@
 ## General info
 This project is used to monitor the Air quality Index of various cities
 At first, AQI data of all the cities is fetched at an interval selected by the user, and on click of a particular city, Its AQI index is monitored and displayed every 30 sec.
-	
+
 ## Technologies
 Project is created with:
 * Kotlin 1.4.32
 * JavaVersion.VERSION_1_8
-	
+
 ## Setup
 To run this project, clone the repo :
 git clone https://github.com/PrachiJainAndroid/mobileRepo.git
@@ -25,4 +25,3 @@ On click of the City Row, Another request is made i.e socket connection is estab
 It then directs to the second screen containing AQI data of the selected city every 30 seconds.
 
 Color Coding is done to highlight if AQI is Good,Average or Poor.
-

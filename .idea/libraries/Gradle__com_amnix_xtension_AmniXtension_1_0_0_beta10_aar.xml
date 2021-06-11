@@ -1,0 +1,15 @@
+<component name="libraryTable">
+  <library name="Gradle: com.amnix.xtension:AmniXtension:1.0.0-beta10@aar">
+    <CLASSES>
+      <root url="jar://$USER_HOME$/.gradle/caches/transforms-2/files-2.1/c9e44e42e0ac8521858c4502ba5ff18e/jetified-AmniXtension-1.0.0-beta10/jars/classes.jar!/" />
+      <root url="file://$USER_HOME$/.gradle/caches/transforms-2/files-2.1/c9e44e42e0ac8521858c4502ba5ff18e/jetified-AmniXtension-1.0.0-beta10/res" />
+      <root url="file://$USER_HOME$/.gradle/caches/transforms-2/files-2.1/c9e44e42e0ac8521858c4502ba5ff18e/jetified-AmniXtension-1.0.0-beta10/AndroidManifest.xml" />
+    </CLASSES>
+    <JAVADOC>
+      <root url="jar://$USER_HOME$/.gradle/caches/modules-2/files-2.1/com.amnix.xtension/AmniXtension/1.0.0-beta10/3367395991e2ad83a3ada80ca4a635182b502875/AmniXtension-1.0.0-beta10-javadoc.jar!/" />
+    </JAVADOC>
+    <SOURCES>
+      <root url="jar://$USER_HOME$/.gradle/caches/modules-2/files-2.1/com.amnix.xtension/AmniXtension/1.0.0-beta10/be2d6ac37d398ab36ee9fe26d1b60586b4905eac/AmniXtension-1.0.0-beta10-sources.jar!/" />
+    </SOURCES>
+  </library>
+</component>
